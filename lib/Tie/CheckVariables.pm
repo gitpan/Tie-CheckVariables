@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
   
 my %hash = (integer => qr{^[-+]?\d+$},
             float   => qr{^[+-]?(\d+\.\d+|\d+\.|\.\d+|\d+)([eE][+-]?\d+)?$},
@@ -112,6 +112,8 @@ You can use these datatypes:
 
 =head1 WHAT TO DO WHEN CHECK FAILS
 
+=head2 on_error
+
 You can specify a subroutine that is invoked on error:
 
   use Tie::CheckVariables;
@@ -123,6 +125,8 @@ You can specify a subroutine that is invoked on error:
   untie $scalar;
 
 =head1 USE YOUR OWN DATATYPE
+
+=head2 register
 
 If the built-in datatypes aren't enough, you can extend this module with your own datatypes:
 
