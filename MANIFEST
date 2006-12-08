@@ -3,8 +3,9 @@ Makefile.PL
 MANIFEST
 README
 t/Tie-CheckVariables.t
-t/CheckVariables_Pod.t
-t/CheckVariables_Pod_Coverage.t
-t/CheckVariables_Manifest.t
+t/97_manifest.t
+t/98_boilerplate.t
+t/99_pod.t
+t/99_pod_coverage.t
 lib/Tie/CheckVariables.pm
 META.yml                                 Module meta-data (added by MakeMaker)
